@@ -1,0 +1,147 @@
+Dealing with Missing Values in Python
+Q1:How would you access the column ”body-style" from the dataframe df?
+
+a.df[ ”body-style"] 
+b.df==”bodystyle"
+
+Correct. df[ ”body-style"] 
+
+Q2: How would you drop the row with the missing value in the column price?
+
+a. df.dropna(subset=["price"], axis=0, inplace=True)
+b. df.dropna(subset=["price"], axis=1, inplace=True)
+
+Correct. df.dropna(subset=["price"], axis=0, inplace=True)
+
+Q3: What is the correct symbol for missing data?
+
+a. nan
+b. no-data 
+
+Correct.nan
+
+Data Formatting in Python
+
+Q1:How would you multiply each element in the column df["a"] by 2 and 
+assign it back to the column df["a"]?
+
+a. 2*df["a"]
+b. df["a"]=2*df["a"]
+c. df["a"]=df["a"]-1
+
+Correct.df["a"]=2*df["a"]
+
+Q2: How would you cast each element in the column "price" to an integer? 
+
+a. df["price"] = int(df["price"])
+b. df["price"] = df["price"].astype("int")
+
+Correct. df["price"] = df["price"].astype("int")
+
+Data Normalization in Python
+
+Q1: What is the maximum value for  feature scaling?
+
+Correct. 1
+
+Q2: Consider the column "length"; select the correct code for z-score or standard score.
+
+a.df["length"] = (df["length"]-df["length"].min())/
+(df["length"].max()-df["length"].min())
+b. df["length"] = (df["length"]-df["length"].mean())/df["length"].std()
+
+Correct. df["length"] = (df["length"]-df["length"].mean())/df["length"].std()
+
+Turning categorical variables into quantitative variables in Python
+
+Q1. Why do we convert values of Categorical Variables into numerical values?
+
+a. Most statistical models cannot take in objects or strings as inputs
+b. To save memory 
+
+Correct. Most statistical models cannot take in objects or strings as inputs
+
+Q2: Consider the following image; what is the name of the operation that 
+transformed the column fuel  into quantitative variables?
+
+fuel
+gas
+diesel   
+gas
+gas
+
+gas	diesel
+1	0
+0	1
+1	0
+1	0
+
+Gas
+gas
+
+a. One-hot encoding    
+b. Data standardization 
+
+Correct. One-hot encoding    
+
+Data Wrangling
+
+Q1: What task does the following line of code perform?
+	df['peak-rpm'].mean()
+
+a. calculate the mean of the column 'peak-rpm'
+b. calculate the mean of the dataframe df
+c. replace missing data with the mean value from the column 'peak-rpm'
+
+Correcrt. calculate the mean of the column 'peak-rpm'
+
+Q2: What task do the following lines of code perform?
+	avg=df['horsepower'].mean(axis=0)
+	df['horsepower'].replace(np.nan, avg)
+
+a. nothing; because the parameter inplace is not set to true
+b. calculate the mean value for the  'horsepower' column and replace all the NaN values of that column by the mean value
+c. replace all the NaN values with the mean
+
+Correcrt. nothing; because the parameter inplace is not set to true
+
+Q3: How would you rename column name from "highway-mpg" to "highway-L/100km"?
+
+a. df.rename(columns={'"highway-mpg"':'highway-L/100km'}, inplace=True)
+b. df.rename(columns={'"highway-mpg"':'highway-L/100km'}, inplace=True)
+
+Correcrt. df.rename(columns={'"highway-mpg"':'highway-L/100km'}, inplace=True)
+
+Q4: What data type is the following set of numbers? 666, 1.1,232,23.12
+
+a. int
+b. float
+c. object
+
+Correcrt. float
+
+Q5: The following code is an example of:
+(df["length"]-df["length"].mean())/df["length"].std()
+
+a. simple feature scaling
+b. min-max scaling
+c. z-score
+
+Correcrt. z-score
+
+Q6: Consider the two columns 'horsepower', and 'horsepower-binned'; from the 
+dataframe df; how many categories are there in the 'horsepower-binned' column?
+
+Medium
+Low
+High
+
+Correcrt. 3
+
+
+
+
+
+
+
+
