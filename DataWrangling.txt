@@ -1,4 +1,5 @@
 Dealing with Missing Values in Python
+
 Q1:How would you access the column ”body-style" from the dataframe df?
 
 a.df[ ”body-style"] 
